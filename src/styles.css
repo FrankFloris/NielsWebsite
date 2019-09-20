@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+
+*{
+  /*border: 1px solid red;*/
+}
+
+html {
+  background-color: rgb(175, 175, 175);
+  /*background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/ddfpm7k-d7a58310-3624-45fd-847b-6318002ec20a.png/v1/fill/w_1280,h_907,q_80,strp/forgot_my_glas_at_the_disco_by_piethein21_ddfpm7k-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGZwbTdrLWQ3YTU4MzEwLTM2MjQtNDVmZC04NDdiLTYzMTgwMDJlYzIwYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.epWLPPPrb1qnpsX2OSn24aCOaux4gYwUMMdJuURwzfs");*/
+}
+
+main {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+router-outlet {
+  padding-top: 50px;
+  display: none;
+}
+
+.routeContainer {
+  position: relative;
+}
+.routeContainer>*{
+  display: block;
+}
+
+.footer{
+  background-color: rgb(175, 175, 175);
+  padding: 1vh;
+  padding-top: 2vh;
+  z-index: 999;
+  bottom: 0;
+  height: 60px;
+}
+
+.footer>p{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 50px;
+  overflow: hidden;
+  z-index: 10;
+  /*overflow-y: scroll;*/
+}
+
+li {
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  /*border-right: 1px black solid;*/
+  width: 12%;
+  height: 35px;
+  text-align: center;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+li:hover:not(.active){
+  background-color: rgba(0, 14, 28, 0.16);
+  height: 45px;
+}
