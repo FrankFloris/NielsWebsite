@@ -23,4 +23,12 @@ export class AppComponent {
   naarHome() {
     this.router.navigate(['home']);
   }
+
+  naarFractalshop() {
+    this.router.navigate(['fractalshop']);
+  }
+
+  naarAboutfractals() {
+    this.router.navigate(['aboutfractals']);
+  }
 }

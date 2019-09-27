@@ -7,11 +7,7 @@ header, footer {
 
 }
 
-.blogplaatje{
-  width: 90%;
-  border: 0.5vw aqua solid;
 
-}
 
 .blogText{
 
@@ -96,20 +92,7 @@ h2 {
 
 }
 
-.blog_item {
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: white;
-  width: 95%;
-  text-align: left;
-  border-radius: 10px;
-  border: 2px black solid;
-  margin-bottom: 12px;
-  overflow: auto;
-  /*column-count: 2;*/
-}
+
 
 .cv_item {
   padding-left: 12px;

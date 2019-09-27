@@ -9,12 +9,16 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { FractalshopComponent } from './fractalshop/fractalshop.component';
+import { AboutfractalsComponent } from './aboutfractals/aboutfractals.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
-    HomeComponent
+    HomeComponent,
+    FractalshopComponent,
+    AboutfractalsComponent
   ],
   imports: [
     BrowserModule,

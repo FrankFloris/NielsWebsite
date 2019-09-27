@@ -12,6 +12,34 @@ html {
   /*background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/ddfpm7k-d7a58310-3624-45fd-847b-6318002ec20a.png/v1/fill/w_1280,h_907,q_80,strp/forgot_my_glas_at_the_disco_by_piethein21_ddfpm7k-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGZwbTdrLWQ3YTU4MzEwLTM2MjQtNDVmZC04NDdiLTYzMTgwMDJlYzIwYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.epWLPPPrb1qnpsX2OSn24aCOaux4gYwUMMdJuURwzfs");*/
 }
 
+.blog_item {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: white;
+  width: 95%;
+  text-align: left;
+  border-radius: 6px;
+  border: 1px black solid;
+  margin-bottom: 12px;
+  overflow: auto;
+  /*column-count: 2;*/
+}
+
+.blogplaatje{
+  width: 100%;
+  border: 0.5vw white solid;
+  display: block;
+  /*max-width: 190.0px;*/
+  /*max-height:134.5px;*/
+  /*min-width: 190.0px;*/
+  /*min-height: 134.5px;*/
+  /*width: auto;*/
+  /*height: auto;*/
+
+}
+
 main {
   text-align: center;
   position: relative;
@@ -76,4 +104,18 @@ li {
 li:hover:not(.active){
   background-color: rgba(0, 14, 28, 0.16);
   height: 45px;
+}
+
+/*h2{*/
+/*  padding: 0;*/
+/*}*/
+
+/*p{*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+
+td{
+  padding: 10px;
+vertical-align: top;
 }
