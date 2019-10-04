@@ -33,3 +33,4 @@ import { AboutfractalsComponent } from './aboutfractals/aboutfractals.component'
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

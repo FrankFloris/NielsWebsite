@@ -2,11 +2,21 @@
 <html>
   <body>
     <nav class="navbar">
-      <ul class="nav">
-        <li (click)="naarHome()"><a class="linkjes">Home</a></li>
-        <li (click)="naarFractalshop()"><a class="linkjes">Fractalshop</a></li>
-        <li (click)="naarAboutfractals()"><a class="linkjes">About Fractals</a></li>
-        <li (click)="naarAboutMe()"><a class="linkjes">About me</a></li>
+      <ul class="nav" id="nav">
+        <li (click)="naarHome()"><a id="home" class="linkjes active">Home</a></li>
+        <li (click)="naarFractalshop()"><a id="fractalshop" class="linkjes">Fractalshop</a></li>
+        <li (click)="naarAboutfractals()"><a id="aboutfractals" class="linkjes">About Fractals</a></li>
+        <li (click)="naarAboutMe()"><a id="about-me" class="linkjes">About me</a></li>
+        <li><div class="dropdown">
+          <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> </li>
       </ul>
     </nav>
   </body>

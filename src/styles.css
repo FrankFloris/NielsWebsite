@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
+
 }
 
 *{
@@ -8,8 +9,11 @@ body {
 }
 
 html {
-  background-color: rgb(175, 175, 175);
-  /*background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/ddfpm7k-d7a58310-3624-45fd-847b-6318002ec20a.png/v1/fill/w_1280,h_907,q_80,strp/forgot_my_glas_at_the_disco_by_piethein21_ddfpm7k-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGZwbTdrLWQ3YTU4MzEwLTM2MjQtNDVmZC04NDdiLTYzMTgwMDJlYzIwYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.epWLPPPrb1qnpsX2OSn24aCOaux4gYwUMMdJuURwzfs");*/
+  /*background-color: rgb(175, 175, 175);*/
+/*background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/ddh1hvr-cea58f6a-928e-4679-8b61-4b26f6438782.jpg/v1/fill/w_1280,h_457,q_75,strp/backgroundtile_by_piethein21_ddh1hvr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGgxaHZyLWNlYTU4ZjZhLTkyOGUtNDY3OS04YjYxLTRiMjZmNjQzODc4Mi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.bOfe54bQaYNNekzHUiDpNmhEuQEavPNcl2iiYVHDjPE");*/
+/*unsaturated*/
+  position: fixed;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/ddhjw59-ed8a4a4f-587c-4767-b1c6-8ea5b7ac4bc9.jpg/v1/fill/w_1280,h_457,q_75,strp/backgroundtilesat60_by_piethein21_ddhjw59-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGhqdzU5LWVkOGE0YTRmLTU4N2MtNDc2Ny1iMWM2LThlYTViN2FjNGJjOS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.G7KvXJP3r_yUO9K9TGZQQBH6dvTjWYxhrNDexab2_cE");
 }
 
 .blog_item {
@@ -17,7 +21,7 @@ html {
   padding-right: 12px;
   padding-top: 2px;
   padding-bottom: 2px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   width: 95%;
   text-align: left;
   border-radius: 6px;
@@ -29,7 +33,7 @@ html {
 
 .blogplaatje{
   width: 100%;
-  border: 0.5vw white solid;
+  border: 0.5vw rgba(255, 255, 255, 0) solid;
   display: block;
   /*max-width: 190.0px;*/
   /*max-height:134.5px;*/
@@ -41,8 +45,11 @@ html {
 }
 
 main {
-  text-align: center;
-  position: relative;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 12px;
   z-index: 2;
 }
 
@@ -59,10 +66,10 @@ router-outlet {
 }
 
 .footer{
-  background-color: rgb(175, 175, 175);
+  background-color: rgba(175, 175, 175, 0.77);
   padding: 1vh;
   padding-top: 2vh;
-  z-index: 999;
+  z-index: 15;
   bottom: 0;
   height: 60px;
 }
@@ -70,7 +77,8 @@ router-outlet {
 .footer>p{
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', bold, serif;
+  font-size: 16px;
 }
 
 ul {
@@ -78,7 +86,7 @@ ul {
   padding: 0;
   margin: 0;
   position: fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.91);
   width: 100vw;
   height: 50px;
   overflow: hidden;
@@ -101,11 +109,15 @@ li {
   cursor: pointer;
 }
 
-li:hover:not(.active){
+li:hover:not(.active), .active{
   background-color: rgba(0, 14, 28, 0.16);
   height: 45px;
 }
 
+/*.active{*/
+/*  background-color: rgba(0, 14, 28, 0.16);*/
+/*  height: 45px;*/
+/*}*/
 /*h2{*/
 /*  padding: 0;*/
 /*}*/
@@ -118,4 +130,64 @@ li:hover:not(.active){
 td{
   padding: 10px;
 vertical-align: top;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 11000;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

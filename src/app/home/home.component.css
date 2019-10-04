@@ -87,7 +87,7 @@ h2 {
   margin-bottom: 6px;
   margin-top: 6px;
   height: min-content;
-  cursor: pointer;
+  /*cursor: pointer;*/
   /*width: max-content;*/
 
 }

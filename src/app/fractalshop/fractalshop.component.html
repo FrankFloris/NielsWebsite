@@ -1,1 +1,358 @@
-<p>fractalshop works!</p>
+<!DOCTYPE html>
+<html class="whole-page">
+<head>
+  <title>Over Niels</title>
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+  <header></header>
+
+  <main>
+    <button><a href="#home">Link 1</a></button>
+    <button (click)="setOldToTrue()">old</button>
+    <button (click)="setNewToTrue()">new</button>
+    <button (click)="setStructuredToTrue()">structured</button>
+    <button (click)="setUnstructuredToTrue()">unstructured</button>
+    <button (click)="setMicroToTrue()">microscopisch</button>
+    <button (click)="setAllToTrue()">all</button>
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Konnichiwa</h2>
+            <p class="blogText">
+              <!--              itemid=1, #all#old#structured-->
+             Waan je naar Japan met deze bloezemachtige fractal.
+              </p></td>
+          <td><img title="Konnichiwa" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d978oh4-269c5fbb-d04e-40f0-97b1-3657a62aa56e.png/v1/fill/w_1280,h_907,q_80,strp/konnichiwa_by_piethein21_d978oh4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOTc4b2g0LTI2OWM1ZmJiLWQwNGUtNDBmMC05N2IxLTM2NTdhNjJhYTU2ZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3zh6unoJ1oa3GL_Moipxqv9SBIINq1yOo6eIAcF4WMk"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Welcome the spiders</h2>
+            <!--              itemid=2, #all#old#structured-->
+            <p class="blogText">Spinachtige taferelen zijn te vinden in deze monochromatische fractal.  </p></td>
+          <td><img title="Welcome the spiders" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d98yza4-6d24e260-fc0d-4e65-a962-83934bc41792.png/v1/fill/w_1280,h_907,q_80,strp/welcome_the_spiders_by_piethein21_d98yza4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOTh5emE0LTZkMjRlMjYwLWZjMGQtNGU2NS1hOTYyLTgzOTM0YmM0MTc5Mi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.PFPozQYUJZaW_OsRO1D7RnjCvm1UGbQ3XcTfZuz4ews"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Non empty</h2>
+            <!--              itemid=3, #all#old#structured-->
+            <p class="blogText">Deze fractal is gemaakt in wat we noemen de gnarl-stijl. Deze stijl is typerend voor ronde vormen en zachte lijnen. </p></td>
+          <td><img title="Non empty" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d9dj730-b11ab025-ac84-4e2d-ad7a-26ab6db9a259.png/v1/fill/w_1280,h_907,q_80,strp/non_empty_by_piethein21_d9dj730-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOWRqNzMwLWIxMWFiMDI1LWFjODQtNGUyZC1hZDdhLTI2YWI2ZGI5YTI1OS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.84sylZLUT_KN8_-Ly9Y2wFpAgrr_6EIwyVq56MOk0M0"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.unstructured || this.micro">
+      <table>
+        <tr>
+          <td>
+            <h2>Wind</h2>
+            <!--              itemid=4, #all#old#micro#unstructured-->
+            <p class="blogText">Voel de wind wanneer je naar deze fractal kijkt. Deze fractal is zeer gedetailleerd en is daarom uitermate geschikt om groot af te beelden.  </p></td>
+          <td><img title="Wind" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d9bgeae-fa1016d2-cae4-4ea1-a8cc-4c3262f34bf5.png/v1/fill/w_1280,h_907,q_80,strp/wind_by_piethein21_d9bgeae-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOWJnZWFlLWZhMTAxNmQyLWNhZTQtNGVhMS1hOGNjLTRjMzI2MmYzNGJmNS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eaIMm5fM-rrI2SzaKxQdbcqj3q91OTOH8FBV6LieysY"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Big feet</h2>
+            <!--              itemid=5, #all#old#structured-->
+            <p class="blogText">
+              Grote voeten maken altijd sporen op het ijs. Of toch niet? Ondanks de ijsachtige tinten in deze fractal, is er veel beweging gaande in dit werk.
+            </p></td>
+          <td><img title="Big feet" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d9g49mb-9494b2f3-2c88-4645-888a-3711b1d888f1.png/v1/fill/w_1280,h_907,q_80,strp/big_feet_by_piethein21_d9g49mb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOWc0OW1iLTk0OTRiMmYzLTJjODgtNDY0NS04ODhhLTM3MTFiMWQ4ODhmMS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.qqt-KA3t6yfWuSNHd6R0p6AZJ9Rfj4_YSrLpYWTFGRc"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured" >
+      <table>
+        <tr>
+          <td>
+            <h2>Coloured oyster</h2>
+            <!--              itemid=6, #all#old#structured-->
+            <p class="blogText">Deze kleurrijke fractal trekt al snel de aandacht. De felle kleuren staan in contrast met de zachte lijnen.  </p></td>
+          <td><img title="Coloured oyster" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d9pf6nb-8c6f0387-36fc-4af9-85a9-3d3d9eecb0ef.png/v1/fill/w_1280,h_907,q_80,strp/coloured_oyster_by_piethein21_d9pf6nb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOXBmNm5iLThjNmYwMzg3LTM2ZmMtNGFmOS04NWE5LTNkM2Q5ZWVjYjBlZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.XnesE72vIOSHBAffFetUVHMGJ7xrKdQs6Qc9atYrvAg"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Back</h2>
+            <!--              itemid=7, #all#old#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Back" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d9tow0f-2edb4961-5d58-41e5-98f8-da12aede4d63.png/v1/fill/w_1024,h_725,q_80,strp/back_by_piethein21_d9tow0f-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzI1IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOXRvdzBmLTJlZGI0OTYxLTVkNTgtNDFlNS05OGY4LWRhMTJhZWRlNGQ2My5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Km6EVmDQJLhW3iv1Kqd7wgo2dsDDo8e27BgtT7TIjEA"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Nut</h2>
+            <!--              itemid=8, #all#old#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Nut" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/da22ivj-bb1bf93d-498f-424f-9a06-50062caecb6b.png/v1/fill/w_1280,h_1809,q_80,strp/nut_by_piethein21_da22ivj-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgwOSIsInBhdGgiOiJcL2ZcL2I0ZWYzNDgxLTVjN2UtNGJkNi05MmNkLTU2MTM4YjMzZjgyZlwvZGEyMml2ai1iYjFiZjkzZC00OThmLTQyNGYtOWEwNi01MDA2MmNhZWNiNmIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.UDsQgdazDi6ZPplGbFUbI7_t2B8DsBDo4FmJ1S-aznE"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Non ricordo il latte</h2>
+            <!--              itemid=9, #all#old#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Non ricordo il latte" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dabccxm-74d3b079-7a10-4e8a-bb4a-227358b183aa.png/v1/fill/w_1280,h_907,q_80,strp/non_ricordo_il_latte_by_piethein21_dabccxm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kYWJjY3htLTc0ZDNiMDc5LTdhMTAtNGU4YS1iYjRhLTIyNzM1OGIxODNhYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Opp6Rv5pwHaLo27-CEb8nVJIvViFtv12BPBkPMnFQGk"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.unstructured || this.micro">
+      <table>
+        <tr>
+          <td>
+            <h2>Not a burst</h2>
+            <!--              itemid=10, #all#old#micro#unstructured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Not a burst" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/daclze1-4ff38eb3-c59b-43d4-96b9-294cdc46ea60.png/v1/fill/w_1280,h_907,q_80,strp/not_a_burst_by_piethein21_daclze1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kYWNsemUxLTRmZjM4ZWIzLWM1OWItNDNkNC05NmI5LTI5NGNkYzQ2ZWE2MC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.UqiukwuXudmnt1mPa-g9N1uj-pPVUUyxvJ9Qq6CDym0"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.old || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Release the vampires</h2>
+            <!--              itemid=11, #all#old#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Release the vampires" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/daauomr-60cfdfdd-a099-4071-a26d-f93b40b018ad.png/v1/fill/w_1024,h_725,q_80,strp/release_the_vampires_by_piethein21_daauomr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzI1IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kYWF1b21yLTYwY2ZkZmRkLWEwOTktNDA3MS1hMjZkLWY5M2I0MGIwMThhZC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ihCzzZ9fDo7gLxsUgqT8Pbxf231-9nrIVYShmxwIuNo"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Snow and snails</h2>
+            <!--              itemid=12, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Snow and snails" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/davz3jp-a2a98fc7-f6d0-4b34-8510-e4b8648c721c.png/v1/fill/w_1280,h_907,q_80,strp/snow_and_snails_by_piethein21_davz3jp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kYXZ6M2pwLWEyYTk4ZmM3LWY2ZDAtNGIzNC04NTEwLWU0Yjg2NDhjNzIxYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.YDcOq1PIuTsMdlx4OZuBn1GY3C0qri4Nkj7URv5iwI4"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Ballare</h2>
+            <!--              itemid=13, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Ballare" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/db33q14-774f02b7-0886-47b4-a2fd-196cab78d0a8.png/v1/fill/w_1280,h_907,q_80,strp/ballare_by_piethein21_db33q14-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kYjMzcTE0LTc3NGYwMmI3LTA4ODYtNDdiNC1hMmZkLTE5NmNhYjc4ZDBhOC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.EButKJUuzZWr8ww7PSetAlHFT8-UN2UZkTlDOHC6GWs"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured || this.micro">
+      <table>
+        <tr>
+          <td>
+            <h2>Fohn</h2>
+            <!--              itemid=14, #all#new#micro#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Fohn" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/db9jmwk-6c9dee21-db91-4759-91e9-b307c8aed25a.png/v1/fill/w_1280,h_854,q_80,strp/fohn_by_piethein21_db9jmwk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kYjlqbXdrLTZjOWRlZTIxLWRiOTEtNDc1OS05MWU5LWIzMDdjOGFlZDI1YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.4jvKw2C0iIEo9sYB2uFy4fjFz4aejKwKyCIlZT4d6xA"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured || this.micro">
+      <table>
+        <tr>
+          <td>
+            <h2>Overthrown</h2>
+            <!--              itemid=15, #all#new#micro#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Overthrown" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dd2ss09-67b3078c-9a20-4cb9-a0ee-8377e430c6f0.png/v1/fill/w_1280,h_907,q_80,strp/overthrown_by_piethein21_dd2ss09-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZDJzczA5LTY3YjMwNzhjLTlhMjAtNGNiOS1hMGVlLTgzNzdlNDMwYzZmMC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Kcci60Jy-_VWuVdB9rihbR1ypycX8zbWpwSIn8sHq7I"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Encapsulations</h2>
+            <!--              itemid=16, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Encapsulations" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dddagws-a941be59-bdb7-4177-8104-62923be1c50c.png/v1/fill/w_1280,h_907,q_80,strp/encapsulations_by_piethein21_dddagws-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGRhZ3dzLWE5NDFiZTU5LWJkYjctNDE3Ny04MTA0LTYyOTIzYmUxYzUwYy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Wgucnz8i3wFqL0ACsxepzfcg8Hrf5tnxc-sLjQgS2Wk"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured || this.micro">
+      <table>
+        <tr>
+          <td>
+            <h2>Today</h2>
+            <!--              itemid=17, #all#new#micro#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Today" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/ddddghc-5239cca9-c7bc-45b8-85ef-f79e33eb7ec8.png/v1/fill/w_1280,h_907,q_80,strp/today_by_piethein21_ddddghc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGRkZ2hjLTUyMzljY2E5LWM3YmMtNDViOC04NWVmLWY3OWUzM2ViN2VjOC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ComkMeIT43MGjmTT5PrFpMKAiMfbptwnE_3656gnfIc"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Creamsoda</h2>
+            <!--              itemid=18, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Creamsoda" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dddgick-2791550f-b7b6-43a0-b40c-5544a4f2825f.png/v1/fill/w_1280,h_907,q_80,strp/creamsoda_by_piethein21_dddgick-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGRnaWNrLTI3OTE1NTBmLWI3YjYtNDNhMC1iNDBjLTU1NDRhNGYyODI1Zi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.8s6cL4z_Oz3xG07Y3DGZZQ3guRE-qdpo08WkgbmbaoY"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Burst</h2>
+            <!--              itemid=19, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Burst" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dddkqx5-c165ce2b-0f5c-4dc2-a3a6-b4d847433819.png/v1/fill/w_1280,h_907,q_80,strp/burst_by_piethein21_dddkqx5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGRrcXg1LWMxNjVjZTJiLTBmNWMtNGRjMi1hM2E2LWI0ZDg0NzQzMzgxOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jmmzgBsQ4tIAEGM7b8fr807865KmrfXIejKfgTAndEs"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Ball of flame</h2>
+            <!--              itemid=20, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Ball of flame" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dddp0s5-8f4e87e0-9155-4b1a-a293-11d31a17629d.png/v1/fill/w_1280,h_907,q_80,strp/ball_of_flame_by_piethein21_dddp0s5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGRwMHM1LThmNGU4N2UwLTkxNTUtNGIxYS1hMjkzLTExZDMxYTE3NjI5ZC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.oTVvI_3oyy42XP_m6eK-yKwjRlGK6rXdqKRu7XXw9D8"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured || this.micro">
+      <table>
+        <tr>
+          <td>
+            <h2>Flow</h2>
+            <!--              itemid=21, #all#new#micro#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Flow" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dddwe1e-124d8d95-60cf-4a6c-bfcf-a6b7c64fa0e4.png/v1/fill/w_1280,h_1809,q_80,strp/flow_by_piethein21_dddwe1e-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgwOSIsInBhdGgiOiJcL2ZcL2I0ZWYzNDgxLTVjN2UtNGJkNi05MmNkLTU2MTM4YjMzZjgyZlwvZGRkd2UxZS0xMjRkOGQ5NS02MGNmLTRhNmMtYmZjZi1hNmI3YzY0ZmEwZTQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.47CGJOhI6x9zpEDAMD-gxuM0equoDPVm491NmU6Q3XU"></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Plastic soup</h2>
+            <!--              itemid=22, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Plastic soup" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dde1uzg-17dce13d-0329-4a97-bcca-b54a7dd3dfec.png/v1/fill/w_1280,h_1809,q_80,strp/plastic_soup_by_piethein21_dde1uzg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgwOSIsInBhdGgiOiJcL2ZcL2I0ZWYzNDgxLTVjN2UtNGJkNi05MmNkLTU2MTM4YjMzZjgyZlwvZGRlMXV6Zy0xN2RjZTEzZC0wMzI5LTRhOTctYmNjYS1iNTRhN2RkM2RmZWMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.R-Qwqc1ewBq5NivoSvGVJHxcUvQj7C_l_PRUUjsRDLg"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>Dropped my biscuit</h2>
+            <!--              itemid=23, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="Dropped my biscuit" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/dde1vir-d4b4efe4-9edf-441f-9f8d-855ae337276c.png/v1/fill/w_1280,h_907,q_80,strp/dropped_my_biscuit_by_piethein21_dde1vir-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGUxdmlyLWQ0YjRlZmU0LTllZGYtNDQxZi05ZjhkLTg1NWFlMzM3Mjc2Yy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZY-fP2HCdH3gKXLoEdpYfh5bV7GJF1VePwsPB6hEaoo"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="blog_item" *ngIf="this.all || this.new || this.structured">
+      <table>
+        <tr>
+          <td>
+            <h2>The colour and the beast</h2>
+            <!--              itemid=24, #all#new#structured-->
+            <p class="blogText">Dit is een blogpost. Dit is een blogpost.Dit is een blogpost.
+              Dit is een blogpost. Dit is een blogpost. Dit is een blogpost. </p></td>
+          <td><img title="The colour and the beast" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/ddfe5e6-4866d288-a3ae-405d-9dd6-804fca724d1b.png/v1/fill/w_1280,h_907,q_80,strp/thecolourandthebeast_by_piethein21_ddfe5e6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kZGZlNWU2LTQ4NjZkMjg4LWEzYWUtNDA1ZC05ZGQ2LTgwNGZjYTcyNGQxYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.4Da1ZsR7MUD5PwY01rX2YYO_DMrdyQt0C0PNDjeWQpA"></td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+
+</div>
+
+<div class="footer">
+  <p>Copyright © 2019</p>
+  <p>Created with Angular by <a href="https://www.deviantart.com/piethein21"> Niels Langeveld</a></p>
+</div>
+</body>
+</html>
