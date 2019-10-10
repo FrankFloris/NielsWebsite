@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html>
+<!--<head>-->
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+<!--</head>-->
   <body>
-    <nav class="navbar">
+    <div class="navbar">
       <ul class="nav" id="nav">
-        <li (click)="naarHome()"><a id="home" class="linkjes active">Home</a></li>
-        <li (click)="naarFractalshop()"><a id="fractalshop" class="linkjes">Fractalshop</a></li>
-        <li (click)="naarAboutfractals()"><a id="aboutfractals" class="linkjes">About Fractals</a></li>
-        <li (click)="naarAboutMe()"><a id="about-me" class="linkjes">About me</a></li>
-        <li><div class="dropdown">
-          <button class="dropbtn">Dropdown
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        <li (click)="naarHome()" id="home" class="listing active"><a class="linkjes">Home</a></li>
+        <li (click)="naarFractalshop()" id="fractalshop" class="listing"><a class="linkjes">Fractalshop</a></li>
+        <li (click)="naarAboutfractals()" id="aboutfractals" class="listing"><a class="linkjes">About Fractals</a></li>
+        <li (click)="naarAboutMe()" id="about-me" class="listing"><a class="linkjes">About me</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">KiesFractalFormat</button>
+<!--            <div class="dropdown-content" style="left:0;">-->
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
-        </div> </li>
+        </li>
       </ul>
-    </nav>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+
+
 
 
   <div id="page" class="routeContainer">
