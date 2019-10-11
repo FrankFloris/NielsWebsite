@@ -18,6 +18,37 @@
     <button (click)="setMicroToTrue()">microscopisch</button>
     <button (click)="setAllToTrue()">all</button>
 
+    <div class="top_item" *ngIf="this.old">
+      <h2>Oldies</h2>
+      Dit zijn al mijn old time favourites.
+    </div>
+
+    <div class="top_item" *ngIf="this.new">
+      <h2>Niewe werken</h2>
+      Dit zijn mijn recente werken te vinden.
+    </div>
+
+    <div class="top_item" *ngIf="this.structured">
+      <h2>Gestructureerde werken</h2>
+      Dit zijn mijn werken te vinden waar een bepaalde structuur in zit. Geometrische figuren zijn hierin vaak terug te vinden.
+    </div>
+
+
+    <div class="top_item" *ngIf="this.unstructured">
+      <h2>Ongestructureerde werken</h2>
+     Dit zijn de werken waar geen structuur opgelegd is. Er zullen overlappende gedeeltes in zitten en sommige lijken misschien meer op iets van Herman Brood dan op iets geometrisch.
+    </div>
+
+    <div class="top_item" *ngIf="this.micro">
+      <h2>Microscopisch</h2>
+      Dit zijn werken waarbij het lijkt of er is ingezoomd op iets heel kleins.
+    </div>
+
+    <div class="top_item" *ngIf="this.all">
+      <h2>Alles</h2>
+      Dit zijn alle werken die te koop worden aangeboden. Heeft u andere wensen? Neem dan contact met me op via nielsfractals@hotmail.com
+    </div>
+
     <div class="blog_item" *ngIf="this.all || this.old || this.structured">
       <table>
         <tr>
@@ -25,7 +56,7 @@
             <h2>Konnichiwa</h2>
             <p class="blogText">
               <!--              itemid=1, #all#old#structured-->
-             Waan je naar Japan met deze bloezemachtige fractal.
+             Waan je in Japan met deze bloezemachtige fractal.
               </p></td>
           <td><img title="Konnichiwa" class="blogplaatje" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d978oh4-269c5fbb-d04e-40f0-97b1-3657a62aa56e.png/v1/fill/w_1280,h_907,q_80,strp/konnichiwa_by_piethein21_d978oh4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOTc4b2g0LTI2OWM1ZmJiLWQwNGUtNDBmMC05N2IxLTM2NTdhNjJhYTU2ZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3zh6unoJ1oa3GL_Moipxqv9SBIINq1yOo6eIAcF4WMk"></td>
         </tr>
