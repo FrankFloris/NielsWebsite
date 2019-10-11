@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-  <html>
+<html class="whole-page">
+<head>
+  <title>Over Niels</title>
+  <
+</head>
     <body>
       <!-- Trigger the Modal -->
-      <img (click)="addModal()" id="myImg" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d978oh4-269c5fbb-d04e-40f0-97b1-3657a62aa56e.png/v1/fill/w_1280,h_907,q_80,strp/konnichiwa_by_piethein21_d978oh4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOTc4b2g0LTI2OWM1ZmJiLWQwNGUtNDBmMC05N2IxLTM2NTdhNjJhYTU2ZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3zh6unoJ1oa3GL_Moipxqv9SBIINq1yOo6eIAcF4WMk" alt="Snow" style="width:100%;max-width:300px">
+      <img (click)="addModal('myImg')" id="myImg" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d978oh4-269c5fbb-d04e-40f0-97b1-3657a62aa56e.png/v1/fill/w_1280,h_907,q_80,strp/konnichiwa_by_piethein21_d978oh4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOTc4b2g0LTI2OWM1ZmJiLWQwNGUtNDBmMC05N2IxLTM2NTdhNjJhYTU2ZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3zh6unoJ1oa3GL_Moipxqv9SBIINq1yOo6eIAcF4WMk"
+           alt="Snow" style="width:100%;max-width:300px">
 
       <!-- The Modal -->
       <div id="myModal" class="modal">
@@ -11,11 +16,12 @@
         <span (click)="closeModal()" class="close">&times;</span>
 
         <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4ef3481-5c7e-4bd6-92cd-56138b33f82f/d978oh4-269c5fbb-d04e-40f0-97b1-3657a62aa56e.png/v1/fill/w_1280,h_907,q_80,strp/konnichiwa_by_piethein21_d978oh4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA3IiwicGF0aCI6IlwvZlwvYjRlZjM0ODEtNWM3ZS00YmQ2LTkyY2QtNTYxMzhiMzNmODJmXC9kOTc4b2g0LTI2OWM1ZmJiLWQwNGUtNDBmMC05N2IxLTM2NTdhNjJhYTU2ZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3zh6unoJ1oa3GL_Moipxqv9SBIINq1yOo6eIAcF4WMk" alt="Image">
+        <img class="modal-content" id="modalImage" >
 
         <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
       </div>
+
 
     <div>
       Misschien denk je "mooie plaatjes Niels, maar wat is een fractal eigenlijk en hoe maak je ze?". Dit is een zeer terechte vraag. Daarom leg ik op deze pagina uit wat een fractal is en hoe ik ze maak.
@@ -24,6 +30,35 @@
       Wiskundig gezien zijn fractals als volgt gedefinieerd ... , maar het begrip fractals wordt vaak veelal anders gebruikt. ....
       Op deze website en in mijn werken geldt: een fractal is een plaatje dat met behulp van wiskundige formules gedefinieerd en gemaakt is.
     </div>
+
+
+      <h2>Aligned Dropdown Content</h2>
+      <p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>
+
+      <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Left</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown" style="float:right;">
+        <button class="dropbtn">Right</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+
+
+      <div class="footer">
+        <p>Copyright © 2019</p>
+        <p>Created with Angular by <a href="https://www.deviantart.com/piethein21"> Niels Langeveld</a></p>
+      </div>
 
     </body>
 </html>

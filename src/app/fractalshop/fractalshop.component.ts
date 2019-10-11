@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-fractalshop',
@@ -17,6 +17,8 @@ export class FractalshopComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  // Get the <span> element that closes the modal
+    const span = document.getElementsByClassName('close')[0];
   }
 
   setToFalse(){
@@ -57,5 +59,30 @@ export class FractalshopComponent implements OnInit {
   setAllToTrue() {
     this.setToFalse();
     this.all = true;
+  }
+
+
+
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    if (event.key === 'Escape') {
+      this.closeModal();
+    }
+  }
+
+  closeModal() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+  }
+
+  addModal(id: string) {
+    const myImage = document.getElementById(id) as HTMLImageElement;
+    const modal = document.getElementById('myModal');
+    const modalImg = document.getElementById('modalImage') as HTMLImageElement;
+    const captionText = document.getElementById('caption');
+    modalImg.src = myImage.src;
+    modalImg.alt = myImage.alt;
+    captionText.innerHTML = modalImg.alt;
+    modal.style.display = 'block';
   }
 }

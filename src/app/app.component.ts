@@ -16,7 +16,7 @@ export class AppComponent {
     title: Title
   ) {}
 
-  removeActiveClass(){
+  removeActiveClass() {
     const header = document.getElementById('nav');
     const link = header.getElementsByClassName('active');
     // tslint:disable-next-line:prefer-for-of
@@ -30,27 +30,27 @@ export class AppComponent {
     this.removeActiveClass();
     const deze = document.getElementById('about-me');
     deze.className += ' active';
-    this.router.navigate(['about-me']);
+    this.router.navigate(['/about-me']);
   }
 
   naarHome() {
     this.removeActiveClass();
     const deze = document.getElementById('home');
     deze.className += ' active';
-    this.router.navigate(['home']);
+    this.router.navigate(['/home']);
   }
 
   naarFractalshop() {
     this.removeActiveClass();
     const deze = document.getElementById('fractalshop');
     deze.className += ' active';
-    this.router.navigate(['fractalshop']);
+    this.router.navigate(['/fractalshop']);
   }
 
   naarAboutfractals() {
     this.removeActiveClass();
     const deze = document.getElementById('aboutfractals');
     deze.className += ' active';
-    this.router.navigate(['aboutfractals']);
+    this.router.navigate(['/aboutfractals']);
   }
 }

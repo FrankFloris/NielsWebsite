@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { FractalshopComponent } from './fractalshop/fractalshop.component';
 import { AboutfractalsComponent } from './aboutfractals/aboutfractals.component';
+import {NgbDatepickerModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AboutfractalsComponent } from './aboutfractals/aboutfractals.component'
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    NgbDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
