@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Title} from '@angular/platform-browser';
+import {FractalshopComponent} from './fractalshop/fractalshop.component';
 
 @Component({
   selector: 'app-root',
@@ -53,4 +54,27 @@ export class AppComponent {
     deze.className += ' active';
     this.router.navigate(['/aboutfractals']);
   }
+
+  // naarFractalshopOld() {
+  //   this.removeActiveClass();
+  //   const deze = document.getElementById('fractalshop');
+  //   deze.className += ' active';
+  //   this.router.navigate(['/fractalshop']);
+  //   this.setToFalse();
+  //   this.setOldToTrue();
+  // }
+
+  // setToFalse() {
+  //   FractalshopComponent.prototype.old = false;
+  //   FractalshopComponent.prototype.new = false;
+  //   FractalshopComponent.prototype.all = false;
+  //   FractalshopComponent.prototype.structured = false;
+  //   FractalshopComponent.prototype.unstructured = false;
+  //   FractalshopComponent.prototype.micro = false;
+  // }
+  //
+  // setOldToTrue() {
+  //   this.setToFalse();
+  //   FractalshopComponent.prototype.old = true;
+  // }
 }

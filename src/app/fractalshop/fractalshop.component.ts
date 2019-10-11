@@ -7,12 +7,12 @@ import {Component, HostListener, OnInit} from '@angular/core';
 })
 export class FractalshopComponent implements OnInit {
   // old, new, all, structured, unstructured, micro = false;
-  new = false;
-  all = true;
-  structured = false;
-  unstructured = false;
-  micro = false;
-  old = false;
+  public new = false;
+  public all = true;
+  public structured = false;
+  public unstructured = false;
+  public micro = false;
+  public old = false;
 
   constructor() { }
 
@@ -21,7 +21,7 @@ export class FractalshopComponent implements OnInit {
     const span = document.getElementsByClassName('close')[0];
   }
 
-  setToFalse(){
+  setToFalse() {
     this.old = false;
     this.new = false;
     this.all = false;
