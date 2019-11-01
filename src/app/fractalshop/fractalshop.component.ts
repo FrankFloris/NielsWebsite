@@ -1,4 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-fractalshop',
@@ -14,7 +16,11 @@ export class FractalshopComponent implements OnInit {
   public micro = false;
   public old = false;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    activatedRoute: ActivatedRoute,
+    title: Title
+  ) {}
 
   ngOnInit() {
   // Get the <span> element that closes the modal
@@ -84,5 +90,9 @@ export class FractalshopComponent implements OnInit {
     modalImg.alt = myImage.alt;
     captionText.innerHTML = modalImg.alt;
     modal.style.display = 'block';
+  }
+
+  navigateTo(destination: string) {
+    this.router.navigate(['/' + destination]);
   }
 }

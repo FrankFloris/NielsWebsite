@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { FractalshopComponent } from './fractalshop/fractalshop.component';
 import { AboutfractalsComponent } from './aboutfractals/aboutfractals.component';
 import {NgbDatepickerModule} from '@ng-bootstrap/ng-bootstrap';
+import { PrijsinformatieEnBestellenComponent } from './prijsinformatie-en-bestellen/prijsinformatie-en-bestellen.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {NgbDatepickerModule} from '@ng-bootstrap/ng-bootstrap';
     AboutMeComponent,
     HomeComponent,
     FractalshopComponent,
-    AboutfractalsComponent
+    AboutfractalsComponent,
+    PrijsinformatieEnBestellenComponent
   ],
   imports: [
     BrowserModule,
