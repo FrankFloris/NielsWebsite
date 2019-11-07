@@ -21,7 +21,7 @@ import { PrijsinformatieEnBestellenComponent } from './prijsinformatie-en-bestel
     HomeComponent,
     FractalshopComponent,
     AboutfractalsComponent,
-    PrijsinformatieEnBestellenComponent
+    PrijsinformatieEnBestellenComponent,
   ],
   imports: [
     BrowserModule,

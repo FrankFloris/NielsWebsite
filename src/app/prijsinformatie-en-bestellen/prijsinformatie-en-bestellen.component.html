@@ -13,13 +13,18 @@
 <div class="top_item">
         <h2>Prijsinformatie en bestellen</h2>
         <p class="blogText">
-          <!--              itemid=1, #all#old#structured-->
           Vind hier alles wat je wilt weten (over de prijs).
           <a href="https://nl.surveymonkey.com/r/HMQ2TMK" target="_blank" class="button"> Bestellen</a>
         </p>
-
-
 </div>
+
+    <div style="height: 400px" class="top_item">
+    <h2>Je hebt interesse in {{fractal.name}}</h2>
+          <img style="height: 300px" src="{{fractal.image}}" alt="fractal">
+    </div>
+
+    <a (click)="goBack()" class="button">Terug</a>
+
   </main>
 </div>
 </body>
