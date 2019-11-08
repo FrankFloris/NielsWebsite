@@ -11,34 +11,6 @@
 
   <main>
 
-<!--    <div class="navbar">-->
-<!--      <ul class="nav" id="nav">-->
-<!--        <li (click)="naarHome()" id="home" class="listing active"><a class="linkjes">Home</a></li>-->
-<!--        <li (click)="naarFractalshop()" id="fractalshop" class="listing"><a class="linkjes">Fractalshop</a></li>-->
-<!--        <li (click)="naarAboutfractals()" id="aboutfractals" class="listing"><a class="linkjes">About Fractals</a></li>-->
-<!--        <li (click)="naarAboutMe()" id="about-me" class="listing"><a class="linkjes">About me</a></li>-->
-<!--        <li>-->
-<!--          <div class="dropdown" style="float:left;">-->
-<!--            <button class="dropbtn">Left</button>-->
-<!--            <div class="dropdown-content" style="left:0;">-->
-<!--              <a href="#">Link 1</a>-->
-<!--              <a href="#">Link 2</a>-->
-<!--              <a href="#">Link 3</a>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </div>-->
-
-
-<!--    <button><a href="#home">Link 1</a></button>-->
-<!--    <button (click)="setOldToTrue()">old</button>-->
-<!--    <button (click)="setNewToTrue()">new</button>-->
-<!--    <button (click)="setStructuredToTrue()">structured</button>-->
-<!--    <button (click)="setUnstructuredToTrue()">unstructured</button>-->
-<!--    <button (click)="setMicroToTrue()">microscopisch</button>-->
-<!--    <button (click)="setAllToTrue()">all</button>-->
-
     <div class="dropdown" style="left: -10vw">
       <button class="dropbtn">Kies Categorie</button>
       <!--            <div class="dropdown-content" style="left:0;">-->
@@ -82,6 +54,24 @@
       <h1>Alles</h1>
       Dit zijn alle werken die te koop worden aangeboden. Heeft u andere wensen? Neem dan contact met me op via nielsfractals@hotmail.com
     </div>
+
+    <ng-container *ngFor="let fractal of fractals">
+    <div class="blog_item" *ngIf="this.all && fractal.all || this.old && fractal.old || this.new && fractal.new || this.structured && fractal.structured
+    || this.unstructured && fractal.unstructured || this.micro && fractal.microscopisch" >
+      <table>
+        <tr>
+          <td>
+            <h2>{{fractal.name}}</h2>
+            <p class="blogText">
+              {{fractal.description}}
+            </p>
+            <a (click)="toPriceInfo(fractal)" target="_blank" class="button">Prijsinformatie en bestellen</a>
+          </td>
+          <td><img (click)="addModal(fractal)"  alt="{{fractal.name}}" id="{{fractal.id}}" title="{{fractal.name}}" class="blogplaatje" src="{{fractal.image}}"></td>
+        </tr>
+      </table>
+    </div>
+    </ng-container>
 
     <div class="blog_item" *ngIf="this.all || this.old || this.structured">
       <table>

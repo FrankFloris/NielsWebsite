@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {AboutMeComponent} from './about-me/about-me.component';
 import {HomeComponent} from './home/home.component';
@@ -13,16 +12,13 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent, data: { depth: 1}},
   {path: 'fractalshop', component: FractalshopComponent},
   {path: 'aboutfractals', component: AboutfractalsComponent},
-  {path: 'fractalshop/prijsinformatie-en-bestellen', component: PrijsinformatieEnBestellenComponent},
+  {path: 'fractalshop/prijsinformatie-en-bestellen/:id', component: PrijsinformatieEnBestellenComponent},
   {path: '', component: HomeComponent},
   {path: '**', component: HomeComponent}
 ];
 
 @NgModule({
-  // declarations: [],
-  imports: [RouterModule.forRoot(routes)
-    // ,CommonModule
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
