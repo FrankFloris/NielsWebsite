@@ -87,17 +87,6 @@ export class FractalshopComponent implements OnInit {
     modal.style.display = 'none';
   }
 
-  // addModal(id: string) {
-  //   const myImage = document.getElementById(id) as HTMLImageElement;
-  //   const modal = document.getElementById('myModal');
-  //   const modalImg = document.getElementById('modalImage') as HTMLImageElement;
-  //   const captionText = document.getElementById('caption');
-  //   modalImg.src = myImage.src;
-  //   modalImg.alt = myImage.alt;
-  //   captionText.innerHTML = modalImg.alt;
-  //   modal.style.display = 'block';
-  // }
-
   addModal(fractal: Fractal) {
     const myImage = document.getElementById(fractal.name) as HTMLImageElement;
     const modal = document.getElementById('myModal');

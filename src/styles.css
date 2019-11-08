@@ -76,7 +76,9 @@ html {
 }
 
 .blogplaatje:hover{
-  opacity: 0.8;
+  /*opacity: 0.8;*/
+  -webkit-filter: brightness(1.2) saturate(0.7);
+  filter: brightness(1.2) saturate(0.7);
 }
 
 
