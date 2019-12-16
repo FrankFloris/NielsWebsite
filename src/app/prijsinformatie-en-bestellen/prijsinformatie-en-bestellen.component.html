@@ -13,15 +13,105 @@
 <div class="top_item">
         <h2>Prijsinformatie en bestellen</h2>
         <p class="blogText">
-          Vind hier alles wat je wilt weten (over de prijs).
-          <a href="https://nl.surveymonkey.com/r/HMQ2TMK" target="_blank" class="button"> Bestellen</a>
-        </p>
+          <table>
+            <tr>
+              <td>
+          Wat leuk dat je interesse hebt in het kopen van {{fractal.name}}.
+          Als verkopende partij vind ik het belangrijk transparant te zijn over de prijsopbouw.
+          Mijn prijsopbouw is simpel. U betaald de totale onkosten + 100 euro voor een A0 werk, 50 voor A1 en 25 voor A2.
+          De onkosten bestaan uit druk en leveringskosten. Zie de tabel aan de rechterkant om de totale kosten te bepalen. Deze prijsbepaling is gebaseerd op het leveren van 1 werk bij standaard leversnelheid (4 werkdagen). Bij meerdere werken betaald u een enkele keer de leverkosten.
+
+                <br><br>
+
+          Ik laat het drukken bij
+          <a href="https://www.printerpro.nl/producten/posters-op-panelen/" target="_blank"> printerpro</a>.
+          Deze printservice heb ik in het verleden ook gebruikt en ik weet dat ze goede kwaliteit leveren.
+          Ik bied alleen  forex en Dibond aan want ik denk dat de fractals op deze materialen het beste tot hun recht komen.
+          De prijs is inclusief verzendkosten, belasting en ophang systeem.
+                <br><br>
+                <a href="https://nl.surveymonkey.com/r/HMQ2TMK" target="_blank" class="button">{{fractal.name}} Bestellen</a>
+              </td>
+              <td><img style="height: 300px" src="{{fractal.image}}" alt="fractal">
+                <table class="prijstabel">
+                  <td>
+                    <tr>Forex</tr>
+                    <tr>Materiaalkosten</tr>
+                    <tr>Kunstenaarsgeld</tr>
+                    <tr>Leverkosten</tr>
+                    <tr>Ophangplaatjes</tr>
+                    <tr>Totaal (netto)</tr>
+                  </td>
+                  <td>
+                    <tr>A0</tr>
+                    <tr>100</tr>
+                    <tr>100</tr>
+                    <tr>25</tr>
+                    <tr>22</tr>
+                    <tr>247</tr>
+                  </td>
+                  <td>
+                    <tr>A1</tr>
+                    <tr>64</tr>
+                    <tr>50</tr>
+                    <tr>25</tr>
+                    <tr>22</tr>
+                    <tr>161</tr>
+                  </td>
+                  <td>
+                    <tr>A2</tr>
+                    <tr>34</tr>
+                    <tr>25</tr>
+                    <tr>25</tr>
+                    <tr>22</tr>
+                    <tr>106</tr>
+                  </td>
+                </table>
+
+                <table class="prijstabel">
+                  <td>
+                    <tr>Dibond</tr>
+                    <tr>Materiaalkosten</tr>
+                    <tr>Kunstenaarsgeld</tr>
+                    <tr>Leverkosten</tr>
+                    <tr>Ophangplaatjes</tr>
+                    <tr>Totaal (netto)</tr>
+                  </td>
+                  <td>
+                    <tr>A0</tr>
+                    <tr>128</tr>
+                    <tr>100</tr>
+                    <tr>25</tr>
+                    <tr>22</tr>
+                    <tr>247</tr>
+                  </td>
+                  <td>
+                    <tr>A1</tr>
+                    <tr>81</tr>
+                    <tr>50</tr>
+                    <tr>25</tr>
+                    <tr>22</tr>
+                    <tr>161</tr>
+                  </td>
+                  <td>
+                    <tr>A2</tr>
+                    <tr>53</tr>
+                    <tr>25</tr>
+                    <tr>25</tr>
+                    <tr>22</tr>
+                    <tr>106</tr>
+                  </td>
+                </table></td>
+
+            </tr>
+
+
+          </table>
+
 </div>
 
-    <div style="height: 400px" class="top_item">
-    <h2>Je hebt interesse in {{fractal.name}}</h2>
-          <img style="height: 300px" src="{{fractal.image}}" alt="fractal">
-    </div>
+<!--    <div style="height: 400px" class="top_item">-->
+<!--          <img style="height: 300px" src="{{fractal.image}}" alt="fractal">-->
+<!--    </div>-->
 
     <a (click)="goBack()" class="button">Terug</a>
 

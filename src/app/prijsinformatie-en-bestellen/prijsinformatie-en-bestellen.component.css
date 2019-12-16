@@ -1,0 +1,12 @@
+.prijstabel>td>tr:nth-child(1){
+  font-weight: bold;
+}
+
+.prijstabel{
+  border: solid black 1px;
+  margin: 15px 0 15px 0;
+}
+
+.prijstabel>td {
+  width: 10%;
+}
